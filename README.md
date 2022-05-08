@@ -1,0 +1,3 @@
+# Battleship-Game
+Battleship is a guessing game for two players. It is played on four grids. Two grids (one for each player) are used to mark each players' fleets of ships. The locations of the fleet (these first two grids) are concealed from the other player so that they do not know the positions of the opponent's ships. Players alternate turns by "firing" at the other player's ships. The objective of the game is to destroy the opposing player's entire fleet. In your game, "firing" will be allowing the player to take a guess at where on the grid their opponent may have placed a ship.
+I created this entire program from scratch as a final project for my Data Structures class.

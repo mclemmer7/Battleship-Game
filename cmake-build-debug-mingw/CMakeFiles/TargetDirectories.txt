@@ -1,0 +1,3 @@
+C:/development/Projects/Battleship-Game/cmake-build-debug-mingw/CMakeFiles/Final_project.dir
+C:/development/Projects/Battleship-Game/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+C:/development/Projects/Battleship-Game/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

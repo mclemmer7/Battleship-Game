@@ -36,8 +36,8 @@ public:
     void OutputComputerGrid();
     void OutputGrid(vector<vector<char>> grid);
 
-    int SinkPlayerShip(char sinkValue);
-    int SinkComputerShip(char sinkValue);
+    void SinkPlayerShip(char sinkValue);
+    void SinkComputerShip(char sinkValue);
     char CheckPosition(string coordinate, string user);
 
 };

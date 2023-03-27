@@ -50,7 +50,7 @@ int main() {
 
     try {
         ifstream shipFile;
-        shipFile.open("ship_placement.csv");
+        shipFile.open("../ship_placement.csv");
 
         if (!shipFile.is_open()) {
             cout << "Could not open ship_placement.csv" << endl;
@@ -58,11 +58,8 @@ int main() {
             // The loop continues until there is nothing left or all of the 5 ships have already been gone through.
             while (!shipFile.fail() && count <= 5) {
                 getline(shipFile, type, ',');
-                //cout << type << " ";
                 getline(shipFile, coordinate, ',');
-                //cout << coordinate << " ";
                 getline(shipFile, direction, '\n');
-                //cout << direction << endl;
                 Ship placeShip = Ship(type, coordinate, direction, count);
                 // Pass the Battlefield player vector by reference into the ship SetPosition function
                 errorCheck = grids.SetPlayerBattlefield(placeShip);
@@ -130,7 +127,6 @@ int main() {
                 cout
                         << "Enter the coordinate where you want to fire at. Enter the column (A-J) and then the row (1-10) \n"
                            "without anything in between them. Example: A1. Enter q to quit" << endl;
-                //cin.ignore();
                 getline(cin, playerCoordinate);
 
                 if (playerCoordinate == "q") {

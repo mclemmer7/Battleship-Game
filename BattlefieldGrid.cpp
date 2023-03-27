@@ -108,7 +108,7 @@ char BattlefieldGrid::CheckPosition(string coordinate, string user) {
 }
 
 // Returns the number of ships that have not been sunk and sinks the player ship.
-int BattlefieldGrid::SinkPlayerShip(char sinkValue) {
+void BattlefieldGrid::SinkPlayerShip(char sinkValue) {
     // sink the player ship
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
@@ -121,7 +121,7 @@ int BattlefieldGrid::SinkPlayerShip(char sinkValue) {
 }
 
 // Returns the number of ships that have not been sunk and sinks the computer ship.
-int BattlefieldGrid::SinkComputerShip(char sinkValue) {
+void BattlefieldGrid::SinkComputerShip(char sinkValue) {
     // sink the computer ship
     // row i and column j
     for (int i = 0; i < 10; i++) {
